@@ -18,7 +18,12 @@ function verificar(vel){
         if(vel>100){
             window.alert("Esse numero e maior que 100")
             return 0
-        }else{
+        }
+        if(vel<1){
+            window.alert("Esse numero e menor que 1")
+            return 0
+        }
+        else{
             return 1
         }
     }else if(array.indexOf(vel)!=-1){
@@ -77,15 +82,7 @@ function menor(){
     }
     return menor
 }
-function menor(){
-    let menor = array[0]
-    for(let i = 0;i<array.length;i++){
-        if(menor>array[i]){ 
-            menor = array[i]
-        }
-    }
-    return menor
-}
+
 function maior(){
     let maior = array[0]
     for(let i = 0;i<array.length;i++){
